@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>星河奖</title>
+
+    <link rel="stylesheet" href="/static/common.css">
+
+    <style>
+        ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .text-cyan {
+            color: cyan;
+        }
+
+        .text-muted {
+            color: #999;
+        }
+
+        .item {
+            position: relative;
+            margin: 8px 0;
+        }
+
+        .item ul {
+            font-size: 15px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #fff;
+            text-shadow: 1px 1px 5px #000;
+            border:1px dotted rgba(255, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .item ul li {
+            margin: 10px 15px;
+        }
+
+        .item img {
+            max-width: 100%;
+            box-shadow: 1px 1px 5px #ccc;
+        }
+
+
+
+    </style>
+</head>
+
+<body style="background: #08031c">
+    <img src="/static/8.jpg" style="width: 7.5rem">
+    <div class="table">
+        <form action="/innovation/" method="post" id="usrform" enctype="multipart/form-data">
+            <p>企业名称<input type="text" name="cname" placeholder="请输入企业名称"  _check="nick"></p>
+            <p>企业办公地址 <input type="text" name="adress" placeholder="请输入办公地址"></p>
+            <p>企业联系人 <input type="text" name="name" placeholder="请输入企业联系人" _check="nick1" ></p>
+            <p>联系人电话 <input type="text" name="mobile" placeholder="请输入联系人电话号码" _check="mobile"></p>
+            <p>企业介绍</p>
+            <input type="hidden" name="introduction" class="intro1">
+            <textarea  placeholder="请输入企业介绍，不得超过200字"  class="intro"></textarea>
+            <p>产品服务介绍：</p>
+            <input type="hidden" name="service" class="servi1">
+            <textarea  class="servi" placeholder="请输入企业业务及运营情况，不得超过200字"></textarea>
+            <p>企业荣誉与资质：</p>
+            <input type="hidden" name="credit" class="credit1">
+            <textarea class="credit" placeholder="请输入企业获得荣誉与专利，不得超过200字"></textarea>
+            <p>融资情况：</p>
+            <input type="hidden" name="financing" class="financing1">
+            <textarea class="financing"  placeholder="请输入融资情况，不得超过200字"></textarea >
+            <p>盈收情况：</p>
+            <input type="hidden" name="profit" class="profit1">
+            <textarea class="profit"  placeholder="请输入2016-2017年的盈收情况，不得超过200字"></textarea>
+            <p>LOGO上传：</p>
+            <img src="/static/6.png" style="width: 1.5rem;margin-left:0.8rem;margin-top:0.15rem" class="btn_add2" id="nextview">
+            <input type="file" name="img" class="avatarInput btn-default" id="upFile" style="opacity: 0" />
+            {% csrf_token %}
+            <a href="javascript:" class="btn" onclick="ZC_api.addMes()" ></a>
+        </form>
+    </div>
+
+
+    <!--<input type="file" accept="image/*" capture="camera" /> 部分手机无法正确限制图片格式 -->
+    <img src="" id="preview" style="display: none"/>
+
+
+
+    <script src="/static/jquery-1.7.2.js"></script>
+    <script src="/static/jquery-2.1.1.js"></script>
+    <script src="/static/util.js"></script>
+
+    <script src="/static/tools.js"></script>
+    <script src="/static/pictureHandle.js"></script>
+
+    <script>
+        $(".intro").change(function(){
+            $('.intro1').val($('.intro').val())
+        });
+        $(".servi").change(function(){
+            $('.servi1').val($('.servi').val())
+        });
+
+        $(".financing").change(function(){
+            $('.financing1').val($('.financing').val())
+        });
+        $(".credit").change(function(){
+            $('.credit1').val($('.credit').val())
+        });
+
+        $(".profit").change(function(){
+            $('.profit1').val($('.profit').val());
+
+        });
+        $(document).ready(function(){
+            $(".btn_add2").click(function(){
+                $(".avatarInput").trigger("click");
+            });
+        });
+    </script>
+</body>
+</html>
+

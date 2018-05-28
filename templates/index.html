@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>星河奖</title>
+
+    <link rel="stylesheet" href="/static/common.css">
+
+
+</head>
+
+<body style="background: #08031c">
+<div style ='margin:0 auto;width:0px;height:0px;overflow:hidden;  ' >
+
+    <img src='/static/logo.jpg' >
+
+</div >
+
+<img src="/static/1.jpg" style="width: 7.5rem">
+<i class="i1"></i>
+<img src="/static/2.jpg" style="width: 7.5rem">
+<i class="i6"></i>
+<div style="height: 7.23rem;background: url('/static/6.jpg');background-size: 100% 100%">
+    <a href="/apply/"><img src="/static/btn1.png" style="width: 2.36rem;margin:0 auto;padding-top: 2.5rem"> </a>
+    <a href="/innovation/"><img src="/static/btn1.png" style="width: 2.36rem;margin:0 auto;padding-top: 2.5rem"> </a>
+</div>
+
+<i class="i2"></i>
+<img src="/static/3.jpg" style="width: 7.5rem">
+<i class="i3"></i>
+<img src="/static/4.jpg" style="width: 7.5rem">
+
+<ul class="ul">
+    <li class="l4">我要报名</li>
+    <li class="l1">申报方式</li>
+    <li class="l2">评选标准</li>
+    <li class="l3">联系方式</li>
+</ul>
+
+<script src="/static/jquery-1.7.2.js"></script>
+<script src="/static/jquery-2.1.1.js"></script>
+<script src="/static/util.js"></script>
+<script>
+    $(".l1").bind("click",function(){
+        $offset1= $(".i1").offset().top;
+
+        $("body").animate({"scrollTop":$offset1},1000);
+    });
+    $(".l2").bind("click",function(){
+        $offset1= $(".i2").offset().top;
+
+        $("body").animate({"scrollTop":$offset1},1000);
+    });
+    $(".l3").bind("click",function(){
+        $offset1= $(".i3").offset().top;
+
+        $("body").animate({"scrollTop":$offset1},1000);
+    });
+    $(".l4").bind("click",function(){
+        $offset1= $(".i6").offset().top;
+
+        $("body").animate({"scrollTop":$offset1},1000);
+    });
+
+</script>
+
+
+
+</body>
+</html>
+

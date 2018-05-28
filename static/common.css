@@ -1,0 +1,207 @@
+body, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre, form, fieldset, legend, input, button, textarea, hr, samp, select {
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+}
+
+body, button, input, select, textarea {
+    outline: none;
+    color: #333;
+    font-size: 0.24rem
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: normal;
+}
+
+li {
+    list-style: none;
+}
+
+.productlists {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #666
+}
+
+em, i {
+    font-style: normal;
+}
+
+img {
+    border: none;
+    display: block;
+}
+
+.clearfix:before, .clearfix:after {
+    content: ".";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+input[type=button], input[type=submit], input[type=file], button {
+    cursor: pointer;
+    -webkit-appearance: none;
+    opacity: 1
+}
+
+html {
+    font-size: 100px;
+    height: 100%;
+}
+
+body {
+    max-width: 750px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+@media screen and (min-width: 320px) {
+    html {
+        font-size: 42.66667px;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    html {
+        font-size: 48px;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    html {
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 384px) {
+    html {
+        font-size: 51.2px;
+    }
+}
+
+@media screen and (min-width: 414px) {
+    html {
+        font-size: 55.2px;
+    }
+}
+
+@media screen and (min-width: 435px) {
+    html {
+        font-size: 58px;
+    }
+}
+
+@media screen and (min-width: 460px) {
+    html {
+        font-size: 61.33333px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    html {
+        font-size: 64px;
+    }
+}
+
+@media screen and (min-width: 540px) {
+    html {
+        font-size: 72px;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    html {
+        font-size: 85.33333px;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    html {
+        font-size: 96px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    html {
+        font-size: 100px;
+    }
+}
+
+.ul{
+    height: 3.4rem;
+    width: 1.8rem;
+    background: #00193c;
+    line-height: 0.9rem;
+    color:#fff;
+text-align: center;
+    position: fixed;
+    z-index: 99;
+    top:5rem;
+    right:0.5rem;
+    padding:0.25rem 0;
+    box-shadow:2px 2px 2px #101f5f;
+
+}
+
+.ul li a{
+    color:#fff
+}
+.table{
+    background: #08031c;color:#ffffff;padding-bottom: 0.5rem;
+}
+.table p{
+    padding-left:0.8rem;
+    padding-top:0.25rem;overflow: auto;line-height: 0.56rem;
+}
+.table input {
+    float: right;
+    width: 4.08rem;
+    height: 0.56rem;
+    margin-right: 0.8rem;
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+    text-indent: 0.25rem;
+    background: #08031c;
+    color: #fff;
+
+}
+.table textarea{
+    width: 5.4rem;
+    margin:0 auto;
+    display: table;
+    border: 1px solid #f2f2f2;
+    background: #08031c;
+    height: 1.3rem;
+    margin-top: 0.15rem;
+    border-radius: 3px;
+    color:#fff;
+    padding:0.15rem
+}
+.table .btn{
+    width: 5.12rem;
+    height: 0.64rem;
+    background: url("/static/btn.png");
+    background-size: 100% 100%;
+    display: table;
+    margin:0 auto;
+    margin-top: 0.5rem;
+}
+
+
